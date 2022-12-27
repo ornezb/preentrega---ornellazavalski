@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size:24px;
+    font-family: sans-serif;
+    font-weight: bold;
+    list-style: none;
+}
+
+.fr{
+    background-color: lightgray;
+}
+.navbar{
+    background-color: lightgrey;
+   
+}
+.fbuscar .btn{
+    color: darkred !important;
+}
+.nav-link, .nav-linknav{
+    color:darkred;
+    text-decoration: none;
+
+}
+
+main{
+    font-family: serif;
+}
+h1, h2{
+    color:darkred;
+    margin: 10px;
+}
+.fr{
+    color: darkred !important;
+    font-size: 18px !important;
+}
+.pform1{
+    width: 55%;
+}
+
+
+
+/*Productos*/
+.cardp{
+    transform: scale(2,1);
+}
+.btn{
+    border: solid 2px;
+    border-radius: 5px;
+    color: black;
+}
+button:hover, button:focus, .btn:hover, form .btn:focus{
+    background-color:palevioletred;
+    color: white;
+    transition: background-color 1s ease-out;
+} 
+/*contacto2*/
+section{
+    display:flex;
+    flex-wrap: wrap;
+}
+section div{
+    margin:10px;
+}
+ form{
+    margin: 10px;
+    align-items: center;
+    width: 80%;
+    border: solid 3px;
+}
+
+form > label{
+    display:flex;
+    flex-direction: column;
+    gap: 5px;
+    border: 1px solid;
+}
+.enviar{
+        background-color:plum;
+        border: 1px solid;
+        width: 100%;
+        padding: 5px;
+        border-radius: 10px;
+    }
+form .enviar:hover, form .enviar:focus{
+    background-color:palevioletred;
+    color: white;
+    transition: background-color 1s ease-out;
+}   

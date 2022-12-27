@@ -1,0 +1,290 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size:24px;
+    font-family: sans-serif;
+    font-weight: bold;
+    list-style: none;
+}
+
+main, footer{
+    margin-top: 20px;
+}
+.ulp{
+    display: none;
+}
+
+.navbar{
+    background-color: lightgrey;
+   
+}
+
+.nav-link, .nav-linknav{
+    color:darkred;
+    text-decoration: none;
+
+}
+.btn{
+    background-color: white;
+    border-radius: 2px;
+}
+.col4, .card3{
+    border-radius: 1px;
+    border: solid 1px;
+    margin: 10px;
+    margin-top: 50px;
+    padding: 20px;
+}
+h2, h1{
+    color:darkred;
+    margin: 15px;
+    margin-top: 30px;
+}
+.d-flex{
+    width: 600px;
+}
+.carrito{
+    width: 20%;
+    margin-left:70px;
+}
+/*Productos*/
+.btn{
+    border: solid 2px;
+    border-radius: 5px;
+    color: black;
+}
+button:hover, button:focus, .btn:hover, form .btn:focus{
+    background-color:palevioletred;
+    color: white;
+    transition: background-color 1s ease-out;
+}   
+/*contacto*/
+.Padreub{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    width: 630px;
+    padding: 10px;
+    margin-top: 20px;
+    gap: 5x;
+}
+.local1, .local2, .local3{
+    border: solid black 2px;
+    margin: 10px 10px 10px 10px;
+    justify-items:flex-start;
+    padding: 10px;
+    width: 450px;
+}
+iframe:hover{
+    transform: scale(2);
+    transition: 0.5s;
+}
+form{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 150px 150px 150px 60px;
+    grid-template-areas: "nombre email"
+                          "telefono asunto"
+                          "mensaje mensaje"
+                          "boton boton";
+    box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.52);
+    padding: 10px;
+    max-width: 900px;
+    margin: 10px auto;
+    gap: 5px;
+    border: 2px solid;
+    border-radius: 20px;
+    }
+form h2:nth-child(1){
+    grid-area: nombre;
+}
+form h2:nth-child(2){
+    grid-area: email;
+}
+form h2:nth-child(3){
+    grid-area: telefono;
+}
+form h2:nth-child(4){
+    grid-area: asunto;
+}
+form h2:nth-child(5){
+    grid-area: mensaje; 
+}
+form > label{
+    display:flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.enviar{
+        grid-area: boton;
+        background-color:plum;
+        border: 1px solid;
+        width: 100%;
+        padding: 5px;
+        border-radius: 10px;
+    }
+form .enviar:hover, form .enviar:focus{
+    background-color:palevioletred;
+    color: white;
+    transition: background-color 1s ease-out;
+}   
+@media(max-width: 1104px){
+    main h2, main p{
+        text-align: center;
+    } 
+    
+    .pform{
+        width: auto;
+        padding: 20px;
+        text-align:end;
+    }  
+    .Padreub{
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        justify-items: center;
+        margin:30px;
+    }
+      .seccion form, form label, form text area{
+        justify-content: flex-end;
+        margin: 2px;
+        width: 70%;
+    }
+    form .enviar:hover, form .enviar:focus{
+        background-color: palevioletred;
+        color: white;
+        transition: background-color 1s ease-out;
+    }
+}
+@media(max-width: 992px){
+    
+}
+@media (max-width:872px){
+    form{
+        width: 500px;
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 90px 90px 90px 90px 60px;
+        grid-template-areas: "nombre"
+                              "email"
+                              "telefono"
+                              "mensaje"
+                              "boton";
+        padding: 5px;
+        left:-10px;
+        position: relative;
+        }
+        
+
+}
+@media(max-width: 576px){
+    form{
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 90px 90px 90px 90px 100px;
+        grid-template-areas: "nombre"
+                              "email"
+                              "telefono"
+                              "mensaje"
+                              "boton";
+        padding: 5px;
+        margin-top: 10px;
+        height: 80%;
+        left:-10px;
+        position: relative;
+        }
+    form, form label{
+        gap:0px;
+        margin: auto;
+    }
+    form textarea{
+        width: auto;
+        height: 110px;
+    }
+    .enviar{
+        position:absolute;
+        grid-area: boton;
+        width: 40%;
+        height: 40%;
+        transform: translate(-50%,0);
+        bottom: 0;
+        right: 60%;
+        }
+    form .enviar:hover, form .enviar:focus{
+            background-color:palevioletred;
+            color: white;
+            transition: background-color 1s ease-out;
+        }              
+}
+@media (max-width: 768px){
+.logo{
+        max-height: 30px;
+        max-width: 30px;
+    }
+form{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 90px 90px 90px 90px 100px;
+    grid-template-areas: "nombre"
+                          "email"
+                          "telefono"
+                          "mensaje"
+                          "boton";
+    padding: 5px;
+    height: 80%;
+    position: relative;
+    right: 100px;
+        }
+form, form label{
+        gap:0px;
+        margin: auto;
+    }
+form textarea{
+        width: 60%;
+}
+.enviar{
+        position: absolute;
+        display:inline-block;
+        grid-area: boton;
+        width: 40%;
+        height: 40%;
+        transform: translate(-50%,0);
+        bottom: 0;
+        left: 60%;
+        }
+}
+form .enviar:hover, form .enviar:focus{
+    background-color:palevioletred;
+    color: white;
+    transition: background-color 1s ease-out;
+}
+.pform{
+    width: 500px;
+    padding: 10px;
+}
+/*pie de pagina*/
+footer{
+    margin-top: 25px;
+    background-color: lightgrey;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-area: "visa" "wapp" "instagram";
+    max-width: 100%;
+    padding-top: 5px;
+    align-items: center;
+    justify-content: space-between;
+    color:darkred;
+    font-family: serif;
+    font-style: oblique;
+}
+footer h2:nth-child(1){
+    grid-area: visa;
+}
+footer h2:nth-child(2){
+    grid-area: wapp;
+}
+footer h2:nth-child(3){
+    grid-area:instagram;
+}
